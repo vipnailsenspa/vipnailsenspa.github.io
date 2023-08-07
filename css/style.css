@@ -63,3 +63,21 @@
 .call {
     background: #075E54;
 }
+
+.sticky {
+	position: fixed; 
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.site-logo {
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+}
+
+div.anchor {
+	position: absolute;
+	top: -50px;
+}
