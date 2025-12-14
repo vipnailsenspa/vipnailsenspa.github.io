@@ -52,6 +52,51 @@
         object-fit: cover;
         object-position: center;
       }
+      
+      /* Floating Booking Button */
+      .floating-booking-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999;
+        background: linear-gradient(135deg, #fc5f45 0%, #f34123 100%);
+        color: #ffffff;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: 'Poppins', Sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(252, 95, 69, 0.4);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .floating-booking-btn:hover {
+        background: linear-gradient(135deg, #f34123 0%, #fc5f45 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(252, 95, 69, 0.6);
+        color: #ffffff;
+      }
+      
+      .floating-booking-btn i {
+        font-size: 18px;
+      }
+      
+      @media (max-width: 767px) {
+        .floating-booking-btn {
+          bottom: 20px;
+          right: 20px;
+          padding: 12px 20px;
+          font-size: 14px;
+        }
+        
+        .floating-booking-btn i {
+          font-size: 16px;
+        }
+      }
     </style>
     <script type="text/javascript" src="js/js-v4-shims.min.js"></script>
     <link rel="canonical" href="https://vip-nails-en-spa.nl">
@@ -824,7 +869,6 @@
                                   </tr>
                                   <tr>
                                     <td class="tg-service">Transparant poeder</td>
-                                    <td class="tg-price">&euro;??,??</td>
                                   </tr>
                                   <tr>
                                     <td class="tg-service">Nieuwe Set Witte Rand</td>
@@ -1198,5 +1242,11 @@
       var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Deel via Facebook","shareOnTwitter":"Deel via Twitter","pinIt":"Pin dit","download":"Downloaden","downloadImage":"Download afbeelding","fullscreen":"Volledig scherm","zoom":"Zoom","share":"Delen","playVideo":"Video afspelen","previous":"Vorige","next":"Volgende","close":"Sluiten"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.8.1","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/www.vip-nails.nl\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":91,"title":"VIP%20Nails%20%26%20Spa","excerpt":"","featuredImage":false}};
     </script>
     <script type="text/javascript" src="js/js-frontend.min.js"></script>
+    
+    <!-- Floating Booking Button -->
+    <a href="booking.html" class="floating-booking-btn">
+      <i class="fas fa-calendar-check"></i>
+      Boek Nu
+    </a>
   </body>
 </html>
